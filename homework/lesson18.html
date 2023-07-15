@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lesson 18</title>
+    
+    <script>
+      
+      var count = 0;
+      
+      setInterval( random_posfortune , 1000);
+       
+       function random_posfortune() {
+       	 count=count+1;
+       	 
+        var rand = Math.floor(Math.random() * 4); // random integer between 0 and 3 inclusive
+        
+        if (count < 5) {
+       		if (rand == 0)
+       			{
+       			alert("You will have a great day.")
+       			}
+       		else if (rand == 1)
+       			{
+       			alert("Someone will show you an act of kindness.")
+       			}
+       		else if (rand == 2)
+       			{
+       			alert("Listen to your heart, and life will be merry.")
+       			}
+       		else
+       			{
+       			alert("Take a moment to breathe. You are doing amazing.")
+       			}
+     		 }
+     		else {
+     		alert("You've reached the maximum of 10 clicks.")
+     		}
+     	 }
+     	 
+     	 
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

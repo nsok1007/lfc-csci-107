@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JS Input/Output Program 1</title>
+    
+    <script>
+      
+      // Ask the user for input, which is stored into a variable.
+      
+      var height; 
+      height = prompt("Enter the height of an isosceles triangle.");
+      height = parseFloat(height);
+      
+      var base; 
+      base = prompt("Enter the base of an isosceles triangle.");
+      base = parseFloat(base);
+      
+      // Process the user input, storing the calculation result into another variable.
+      
+      var area;
+      area = 0.5 * height * base;
+      
+      var base1;
+      base1= base 
+	  
+	  var perimeter_a;
+	  perimeter_a = (Math.sqrt((height * height) + ((base/2) * (base/2)))) + (Math.sqrt((height * height) + ((base/2) * (base/2))));
+	 
+	  var perimeter_b;
+	  perimeter_b = (base1) + (perimeter_a);
+	  perimeter_b = Math.round(100*perimeter_b)/100;
+      
+      // Provide output to the user.
+      
+      document.write("Height of an isosceles triangle: ");
+      document.write(height);
+      document.write("<br>Base of an isosceles triangle: ");
+      document.write(base);
+      document.write("<br>Area of triangle: ");
+      document.write(area);
+      document.write("<br>Perimeter of triangle: ");
+      document.write(perimeter_b);
+
+    </script>
+  </head>
+  <body>
+  </body>
+  </html>
+
+

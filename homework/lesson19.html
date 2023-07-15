@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+    <title>Lesson 19</title>
+
+    <style type="text/css">
+      
+         /* ID selector for the DIV block - could have used a class selector */
+    
+    	#block1 
+    	{
+      		width:200px;
+     		height:200px;
+      		font-size:150%;
+      		font-weight:bold;
+      		padding:5px;
+    	}	
+      
+    	div.skin1 
+    	{
+        	background-color:#2eb8b8;
+        	border: 2px #FF0000;
+        	padding:5px;
+   	 	}
+      
+    	div.skin2
+    	{
+       	 	background-color:#333333;
+        	border: 4px #DDDDDD dotted;
+        	padding:5px;  
+    	}
+      
+	</style>
+	
+	<script>
+        
+        /* 
+          Here it's good to store reference to the block in a local variable once.
+          Otherwise, you would need to do document.getElementById twice in the if..else
+        */   
+      
+         function toggle_hide(which) {
+          
+          	var myblock = document.getElementById('block1');
+          
+          	if ( which == 'show' ) {
+              	myblock.style.visibility = "visible";
+              
+          	}
+          	else {
+              myblock.style.visibility = "hidden";
+          	}
+      	} 
+      
+        function toggle_class(which) {
+      
+          	var myblock = document.getElementById('block1');
+          	
+          
+          	if ( which == 'in' ) {
+              myblock.className = "skin1";
+              myblock.innerHTML = "";
+          	}
+          	else {
+              myblock.className = "skin2";
+              myblock.style.color = '#FFFFFF';
+              myblock.innerHTML = "Surprise!";
+			}
+		}
+    </script>
+  </head>
+  <body>
+    <br><br>
+    
+    	<div class="skin1" id="block1"
+			 style="width: 200px; height: 200px;"
+             onmouseover="toggle_class('out')" onmouseout="toggle_class('in')">
+		</div>
+    
+    <br><br>
+    
+    <a href="#null" onclick="toggle_hide('hide')" onmouseout="toggle_hide('show')">Click Me!</a>  
+
+    <br><br>
+    
+  </body>
+</html>
+

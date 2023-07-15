@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lesson 18</title>
+    
+    <script>
+       
+       var count = 0;
+       
+       setInterval( random_negfortune , 1000);
+       
+       function random_negfortune() {
+        count=count+1;
+       
+        var rand = Math.floor(Math.random() * 4); // random integer between 0 and 3 inclusive
+        
+        if (count < 5) {
+			if (rand == 0)
+				{
+				alert("Keep procrastinating, and you'll fail.")
+				}
+			else if (rand == 1)
+				{
+				alert("If you don't read this, your friend will text you something mean.")
+				}	
+			else if (rand == 2)
+				{
+				alert("Thinking of yourself before others will make you lose those close.")
+				}
+			else 
+				{
+				alert("You have one day until life ends unless you grant someone a compliment.")
+				}
+			}
+			else {
+			alert("You've reached the maximum of 10 clicks.")
+			}
+		}
+      
+    </script>
+ 
+  </head>
+  
+  <body>
+ 
+
+  </body>
+</html>

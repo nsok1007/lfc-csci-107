@@ -1,0 +1,121 @@
+/*#bfbfbf – a neutral light-medium warm gray for the global body background
+#000066 – a dark navy blue for the h1 title
+#9900cc – a dark reddish-purple for the h2 title
+#ff6699 – a rosy pink for a span.explanation
+#33cc33 – a bright word processor green for span.inspiration
+#006699 – a dark turquoise for the div.commentary
+#6666ff – a nice purple for the div.haha
+Although the colors together do not necessarily go together, I like all of these shades and therefore I made them a scheme.
+*/
+body {
+    background-color: #bfbfbf;
+}
+h1 {
+    color: #000066;
+    text-align: left;
+}
+h2 {
+    color: #9900cc;
+}
+h3 {
+	color: #000066;
+p {
+    font-family: Georgia;
+    font-size: 16px;
+    font-weight: normal;
+}
+a.button_link:link, a.button_link:visited { /*the button link for my hw page on index*/
+        background-color: #999999;
+        color: #FFFFFF;
+        padding: 5px 5px 5px 5px;
+        margin: 0px;
+        text-decoration: none;
+        font-weight:bold;
+        }
+	 a.mylink:link {              /* Unvisited Link State for index */
+        color: #000066;
+      }
+
+      a.mylink:visited {           /* Visited Link State for index*/
+        color: #9900cc;
+      }
+      
+      a.mylink:hover {             /* MouseOver Link State for index*/
+        color: #ff6699;
+        text-decoration: none;
+      }
+        
+      a.mylink:active {            /* Selected Link State - visible during the act of clicking it for index */
+        color: #006699;
+        text-decoration: none;
+      }
+      ul.horiz_nav {
+        list-style-type: none; 
+        overflow: hidden;
+        background-color: #e6e6e6;
+        margin: auto;
+        width: 1000px;
+      }
+      
+      ul.horiz_nav li {           /*horizontal nav bar for the homework links on the hw page*/
+        float: left;   
+      }
+      
+      ul.horiz_nav li a {
+        color: #000000;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        display: block;  /* a bit of magic - turns anchor into block element to fill up entire list item */
+      }
+      
+      ul.horiz_nav li a:hover {
+        background-color: #000066;
+        color: #FFFFFF;
+      }
+       a.btp:link {              /* Unvisited Link State for index */
+        color: #000066;
+      }
+
+      a.btp:visited {           /* Visited Link State for index*/
+        color: #9900cc;
+      }
+      
+      a.btp:hover {             /* MouseOver Link State for index*/
+        color: #ff6699;
+        text-decoration: none;
+      }
+        
+      a.btp:active {            /* Selected Link State - visible during the act of clicking it for index */
+        color: #006699;
+        text-decoration: none;
+      }
+div.commentary  {
+  color: #006699;
+  font-size: 16pt;
+  font-family: "Century Gothic", normal;
+}
+
+div.quote  {
+  font-size: 14pt;
+  font-family: "Garmond", normal;
+  text-align: center;
+}
+
+div.haha  {
+  color: #6666ff;
+  font-size: 12pt;
+  font-family: "Courier New";
+  border: 2px solid #000000;
+  margin: 3px;
+  padding: 10px;
+}
+
+span.explanation {
+  color: #ff6699;
+  margin: 3px;
+}
+
+span.inspiration  {
+  background-color: #33cc33;
+}

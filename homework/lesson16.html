@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JS Input/Output Program 2</title>
+    
+    <script>
+    
+    	var score_a = prompt("Please enter an exam score.");
+      	score_a = parseFloat(score_a); // good habit for numeric input
+      	
+      	var score_b = prompt("Please enter an exam score.");
+      	score_b = parseFloat(score_b); // good habit for numeric input
+
+		var score_c = prompt("Please enter an exam score.");
+      	score_c = parseFloat(score_c); // good habit for numeric input
+      	
+        var result;  // To store the result of the decision below.
+        
+       	if (score_a > score_b && score_b > score_c ){
+       	var avg =  (score_a+score_b)/2;
+      	avg = Math.round(100*avg) / 100;
+      	document.write("<br>The average of " + score_a + " and " + score_b + " is " + avg + ".<br>");
+      	}
+      	
+      	else if (score_b > score_a && score_a > score_c){
+      	var avg =  (score_a+score_b)/2;
+      	avg = Math.round(100*avg) / 100;
+      	document.write("<br>The average of " + score_b + " and " + score_a + " is " + avg + ".<br>");
+      	}
+      	
+      	else if (score_c > score_b && score_b > score_a){
+      	var avg =  (score_a+score_b)/2;
+      	avg = Math.round(100*avg) / 100;
+      	document.write("<br>The average of " + score_c + " and " + score_b + " is " + avg + ".<br>");
+      	}
+      	
+      	else if (score_b > score_c && score_c > score_a){
+      	var avg =  (score_a+score_b)/2;
+      	avg = Math.round(100*avg) / 100;
+      	document.write("<br>The average of " + score_b + " and " + score_c + " is " + avg + ".<br>");
+      	}
+      	
+      	else if(score_a > score_c && score_c > score_b){
+      	var avg =  (score_a+score_b)/2;
+      	avg = Math.round(100*avg) / 100;
+      	document.write("<br>The average of " + score_b + " and " + score_a + " is " + avg + ".<br>");
+      	}
+      	
+      	else if (score_c > score_a && score_a > score_b){
+      	var avg =  (score_a+score_b)/2;
+      	avg = Math.round(100*avg) / 100;
+      	document.write("<br>The average of " + score_b + " and " + score_a + " is " + avg + ".<br>");
+      	}  
+
+     document.write("Test score 1: ");
+     	document.write(score_a);
+     document.write("<br>Test score 2: ");
+     	document.write(score_b);
+     document.write("<br>Test score 3: ");
+     	document.write(score_c);      
+         	
+    </script>
+  </head>
+  <body>
+  </body>
+  </html>
+
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JS 3 – While Loop/Validation </title>
+    
+  </head>
+  <body>
+    <h3>Overtime Pay Example 2.0</h3>
+    
+    This script calculates your weekly pay based upon your hourly rate and the number of yours you worked that week. 
+    <br>
+    Overtime is paid at a rate of 1.5 the normal hourly rate for any hours worked over 40 in a week.
+    
+    <br><br>
+    
+    <script>
+      
+      var regular_hours, regular_pay, overtime_hours, overtime_pay, total_pay;
+       
+    	var hours;
+    	var bad_input = true;
+        var pay_rate;
+      	var bad_input1 = true;
+      	
+       	while (bad_input == true && bad_input1 == true) 
+       	{
+       		var hours = prompt("Enter the number of hours you worked this week between 0 and 168.");
+     	 	hours = parseFloat(hours);
+     	 	var pay_rate = prompt("Enter your hourly pay rate in dollars between 0 and 100.");
+      		pay_rate = parseFloat(pay_rate);
+     	 	if ( isNaN(hours) || hours < 0 || hours > 168 && isNaN(pay_rate) || pay_rate < 0 || 100 < pay_rate) 
+     	 	{
+             bad_input = true;
+             bad_input1 = true;
+    	    }
+        	else 
+        	{
+            	bad_input = false;
+            	bad_input1 = false;
+          	}
+     	 }
+     	 
+           var result; 
+      
+      if (hours <= 40) {
+        regular_hours  = hours;
+        overtime_hours = 0;
+      }
+      else {
+        regular_hours  = 40;
+        overtime_hours = hours - 40;
+      }
+  
+      regular_pay  = regular_hours * pay_rate;
+      overtime_pay = overtime_hours * pay_rate * 1.5;  // overtime is 1.5 the normal pay rate
+      total_pay    = regular_pay + overtime_pay;
+  
+      document.write("Your pay breakdown is as follows:<br>");
+      document.write(regular_hours + " regular hours: $" + regular_pay + "<br>");
+      document.write(overtime_hours + " overtime hours: $" + overtime_pay);
+      document.write("<br>Total pay: $" + total_pay);
+      
+    </script>
+  </body>
+</html>
