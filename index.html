@@ -2,68 +2,203 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="This is a website that serves as Eleanor's photography and videography portfolio.">
-<meta name="keywords" content="photographs, videos, films, art portfolio, artwork, college art student">
+<meta name="description" content="This is my finalized home-page.">
+<meta name="keywords" content="photography, html, css, portfolio, graphics, coding">
 <meta name="author" content="Eleanor Sokol">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>index</title>
+<title>Home Page</title>
 
 <link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style type="text/css">
+	.mySlides {display:none;}
+  	html{
+  		margin: 0px 131px 0px 131px;
+  		background-image: url("images/irishsunset.jpg");
+		background-repeat: no-repeat;
+    	background-position: center center;
+   	 	background-size: cover;
+  		background-attachment: fixed;
+  	
+  		opacity: 1.0;
+   	  }
+   	  body {
+    background-color: #f2f3f4;
+	}
+	h2 {
+        text-align: center;
+      } 
+      
+     div.page_header {
+        height: 125px;
+        background-color: #f2f3f4;
+        padding: 5px;
+        text-align: center;
+        font-family: "Century Gothic", sans-serif;
+        width: 1000px;
+      }
+      
+      div.page_content {
+        min-height: 900px;
+        padding: 0px; 
+        background-color: #f2f3f4;
+        width: 1000px;
+        margin: 0px auto 0px auto; /* centers page_wrapper block */
+      }
+      
+      div.page_footer {
+        height: 125px;
+        background-color: #f2f3f4;
+        padding: 5px;  
+        width: 1000px;             
+      } 
+	div.column1 {
+        box-sizing: border-box;  /* Changes the way the block's size is calculated. */
+                                 /* Very helpful to get columns widths to add up to 100% even with padding */
+        float: left;   
+        width: 50%;              /* width now includes BOTH padding and border (if it has a border). */
+        background-color: #bfbfbf;
+        
+        margin: auto;         
+        padding:12px;          /* Makes the gutters */
+      }  
+     div.centered_column_wrapper {
+        width: 1000px;
+        margin: 0px auto 0px auto;
+     }
+     div.block1 {
+         border: 5px dotted #24248f;
+         margin: 0px;
+    }
+    div.haha1{
+    	text-align: center;
+    	color: #6666ff;
+    	font-family: "Courier New";
+    	margin: 3px;
+    	padding: 10px;
+    }
+    .avatar {
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+	}
+	div.column1a{
+		text-align: center;
+	}
+	  ul.horiz_nav {
+        list-style-type: none;  /* a bit of magic - turns off the bullets */
+        margin: auto;
+        padding: 0px;
+        overflow: hidden;
+        background-color: #bfbfbf;
+        width: 1000px;
+      }
+      ul.horiz_nav li {
+        float: left;    /* a bit of magic - makes list horizontal - explained in different lesson */
+      }
+      ul.horiz_nav li a {
+        color: #000000;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        display: block;  /* a bit of magic - turns anchor into block element to fill up entire list item */
+      }
+      ul.horiz_nav li a:hover {
+        background-color: #000066;
+        color: #FFFFFF;
+      }
+</style>
 
 </head>
-
 <body>
-<i><b>Hello World!!</b></i> Although I already have a website, I would love to create my own from scratch that serves as a portfolio for my photography, poetry, and videos. As a result, I would love to put images, a video or two, and text on my website.    
- <hr>
-<a class="mylink" href="https://sokol-e.myportfolio.com/">Eleanor's Portfolio</a>
-<a class="mylink" href="https://conniegroschphotography.com/what-is-photography/">Connie Grosch Photography</a>
-<a class="mylink" href="https://www.reinhardsokolphotography.com/">Reinhard Sokol Photography</a>
-<a class="mylink" href="mailto:sokolel@mx.lakeforest.edu"><b title="school email"<b/><img src="images/mailbox.png" width="15" height="18" alt="Contact Me"</a>
-</hr>
-<br>
-<br>
-    <br>
-    <br>
-     <a class="button_link" href="homework/homework.html">Homework Page</a>
-    <br>
-    <br>
-    <h1><b>Trivia Facts</b></h1>  
-<p> 
-<span class="explanation">The site that I currently have is an adobe portfolio.</span> <i>I'm curious as to how such free domains work and if the host service such as Adobe owns the server and they just host multiple sites to it.</i>  
-Part of my interest in photography comes from my parents who are professionals and used to shoot weddings for over a decade. <span class="inspiration">My dad is also able to code and maintains his own website which I think is really cool, and hope to follow in his footsteps.</span>
-</p>    
-<br>
-<br>
-<h2><center>A Quote</center></h2>
-<br>
-<pre> <div class="quote">
-"When words become unclear, I shall focus with photographs.
- When images become inadequate, I shall be content with silence."
-- <i><b title="I didn't know what to put here"</b> Ansel Adams</i> 
-	</div>
-</pre>
-<br><br>
-<div class="commentary">
-      I love this quote because it really speaks to an artistic mindset.
-    </div>
-    <div class="haha">
-      To compliment this mentality, why not have funky fonts??
-    </div>
- <br><br>   
-<hr>
-<p><img src="images/platy.jpg" width="1024" height="662" alt="a duck billed platypus"></p>
-<p><img src="images/styleweek.jpg" width="1024" height="682" alt="a model at Style Week 2014"></p>
-<p><img src="images/irishsunset.jpg" width="1024" height="848" alt="a sunset over Offaly, Ireland model"></p>
+      <div class="page_header">
+        <h2><img src="images/platy.jpg" alt="Avatar" class="avatar"> <br> Sokol E. Portfolio II</h2>
+      </div>
+    
+	<ul class="horiz_nav">
+   	<li><a href="https://sokol-e.myportfolio.com/"> portfolio I </a></li>
+ 	<li><a href="homework/homework.html">previous coding assignments</a></li>
+ 	<li><a href="https://conniegroschphotography.com/what-is-photography/"> connie grosch photography</a></li>
+   	<li><a href="https://www.reinhardsokolphotography.com/"> reinhard sokol photography</a></li>
+ 	<li><a href="https://sokol-e.myportfolio.com/about-contact"> about / contact</a></li>
+   </ul>
+   
+      <div class="page_content">
+      <div class="block1">
+        <h3> <div class= "haha1"> Welcome to my <i>new</i> website <br> dedicated to DMD & my artistic pursuits!</div>
+        </h3></div>
+      
+      		<br><br><br><br>
+      		
+      	<div class="w3-content w3-display-container">
+ 			<img class="mySlides" src="images/platy.jpg" style="width:100%">
+  			<img class="mySlides" src="images/irishsunset.jpg" style="width:100%">
+  			<img class="mySlides" src="images/styleweek.jpg" style="width:100%">
+  			<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  			<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+		</div>
 
-<small><mark>&copy;</mark> Eleanor Sokol 2018</small>
+		<br><br><br><br>
+    
+    	<div class="column1"> 
+    		<h3> <div class="column1a"> Selected Poetry </div></h3>
+    		<ul>
+    			<li><a href="https://sokol-e.myportfolio.com/the-melody-of-life">the melody of life</a></li> <br> <br>
+   				<li><a href="https://sokol-e.myportfolio.com/4-am">4am</a></li> <br> <br>
+   				<li><a href="https://sokol-e.myportfolio.com/note-to-self">note to self</a></li> <br> <br>
+   				<li><a href="https://sokol-e.myportfolio.com/who-you-were">who you were</a></li> <br> <br>
+  				<li><a href="https://sokol-e.myportfolio.com/anxiety">anxiety</a></li> <br> <br>
+  			</ul>
+		</div>
 
- <p>
- &nbsp;&nbsp;&nbsp;&#10001;
- </p>
- 
+		<div class="column1"> 
+			<h3> Some of My Favorite Quotes </h3>
+			<ul>
+				<li> "I don't paint dreams or nightmares, I paint my own reality." <br>
+					 &nbsp;&nbsp;&nbsp;– Frida Kahlo </li> <br>
+				<li> "Nothing is absolute. Everything changes, everything moves,
+					everything resolves, everything flies and goes away." <br>
+					&nbsp;&nbsp;&nbsp; – Frida Kahlo </li> <br>
+				<li> "Without elegance of the heart, there is no elegance." <br>
+					&nbsp;&nbsp;&nbsp; – Yves Saint Laurent </li> <br> <br> <br> <br>
+			</ul>
+			</div>
+	 	<br><br><br><br> 
+	 	
+	 	<a class="btp" href="#top">Back To Top</a> </div></div>
+		
+    <div class="page_footer">
+        <br><br><br><br>
+        
+    <small>&copy; 2018 Eleanor Sokol &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 
+    	<a href="mailto:sokolel@mx.lakeforest.edu"><b title="school email"<b/><img src="images/mailbox.png" width="15"
+		height="18" alt="Contact Me"</a></small> 
+      </div>
+      
+    </div> <!-- End page_wrapper Block --> 
+    <script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+  	showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+  	var i;
+  	var x = document.getElementsByClassName("mySlides");
+  	if (n > x.length) {slideIndex = 1}    
+  	if (n < 1) {slideIndex = x.length}
+  	for (i = 0; i < x.length; i++) {
+     	x[i].style.display = "none";  
+  	}
+  	x[slideIndex-1].style.display = "block";  
+	}
+	
+</script>
 </body>
-
 </html>
 
-<!-- Hi. I'm looking forward to continuing to build this website and I find it really cool that I'm finally learning how to code! 
- -->
